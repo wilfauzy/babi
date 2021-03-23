@@ -1,0 +1,77 @@
+# ----
+# Site
+
+title: Kandang Babi
+url: "https://babi.wildanfauzy.com"
+baseurl: "https://babi.wildanfauzy.com"
+logo: /siteicon.png
+description: Dunia Babi dan Seisinya.
+author: 
+  name: Wildan Fauzy
+  email:
+  twitter: wilfauzy # twitter username without the @ symbol
+social:
+  name: 
+  links:
+    - https://github.com/wilfauzy
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_chapters/1-kata-pengantar.md"
+    values:
+      permalink: "/"
+      layout: "chapter"
+  -
+    scope:
+      path: "full.html"
+    values:
+      layout: "chapters"
+      toc: "hash"
+  -
+    scope:
+      type: "chapters"
+    values:
+      layout: "chapter"
+
+collections:
+  chapters:
+    output: true
+  extras:
+
+# ----
+# CloudCannon
+
+_options:
+  content:
+    format: "h3 h4 h5 h6 p"
+    bold: true
+    italic: true
+    removeformat: true
+    link: true
+    blockquote: true
+    numberedlist: true
+    bulletedlist: true
+    image: true
+    underline: true
+    table: true
+
+_comments:
+  cover_image: Used as the background of the book cover.
+  table_of_contents: Shows/hides the tables of contents.
