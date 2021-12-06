@@ -26,9 +26,9 @@ exclude:
 defaults:
   -
     scope:
-      path: "index.html"
+      path: "full.html"
     values:
-      layout: "default"
+      layout: "chapters"
       toc: "hash"
 
 collections:
