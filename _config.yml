@@ -1,7 +1,7 @@
 # ----
 # Site
 url: "https://babi.wildanfauzy.com"
-baseurl:
+baseurl: "https://babi.wildanfauzy.com"
 title: Kandang Babi
 logo: /siteicon.png
 description: Dunia Babi dan Seisinya.
@@ -45,31 +45,9 @@ defaults:
     scope:
       type: "chapters"
     values:
-      permalink: "/"
       layout: "chapter"
 
 collections:
   chapters:
     output: true
   extras:
-
-# ----
-# CloudCannon
-
-_options:
-  content:
-    format: "h3 h4 h5 h6 p"
-    bold: true
-    italic: true
-    removeformat: true
-    link: true
-    blockquote: true
-    numberedlist: true
-    bulletedlist: true
-    image: true
-    underline: true
-    table: true
-
-_comments:
-  cover_image: Used as the background of the book cover.
-  table_of_contents: Shows/hides the tables of contents.
