@@ -31,21 +31,10 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "_chapters/1-kata-pengantar.md"
-    values:
-      permalink: "/"
-      layout: "chapter"
-  -
-    scope:
       path: "full.html"
     values:
       layout: "chapters"
       toc: "hash"
-  -
-    scope:
-      type: "chapters"
-    values:
-      layout: "chapter"
 
 collections:
   chapters:
