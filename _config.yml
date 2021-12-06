@@ -28,7 +28,7 @@ defaults:
     scope:
       path: "full.html"
     values:
-      layout: "chapters"
+      layout: "default"
       toc: "hash"
 
 collections:
