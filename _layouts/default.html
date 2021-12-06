@@ -38,11 +38,7 @@
 		</div>
 
 		<p class="wrap formats">
-				<a {% unless page.url contains 'full' %}class="active"{% endunless %} href="{{ site.baseurl }}/">Chapter HTML</a>
-			&#183;
-				<a {% if page.url == '/full.html' %}class="active"{% endif %} href="{{ site.baseurl }}/full.html">Book HTML</a>
-			&#183;
-				<a href="{{ site.baseurl }}/full.html#print-book">Print</a>
+				<a href="{{ site.baseurl }}/index.html#print-book">Print</a>
 		</p>
 
 		{{ content }}
