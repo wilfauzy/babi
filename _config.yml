@@ -1,7 +1,7 @@
 # ----
 # Site
-url: "/"
-baseurl: "https://babi.wildanfauzy.com"
+url: "https://babi.wildanfauzy.com"
+baseurl:
 title: Kandang Babi
 logo: /siteicon.png
 description: Dunia Babi dan Seisinya.
@@ -20,8 +20,6 @@ social:
 timezone: Etc/UTC
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - README.md
   - LICENCE
 
@@ -35,6 +33,7 @@ defaults:
     scope:
       path: "_chapters/1-kata-pengantar.md"
     values:
+      permalink: "/"
       layout: "chapter"
   -
     scope:
