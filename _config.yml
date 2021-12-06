@@ -45,6 +45,7 @@ defaults:
     scope:
       type: "chapters"
     values:
+      permalink: "/"
       layout: "chapter"
 
 collections:
